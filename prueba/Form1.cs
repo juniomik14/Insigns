@@ -24,7 +24,10 @@ namespace prueba
             DataSet dts;
             dts = class1.portaTaula("UserTypes");
 
-            dataGridView1.DataSource = dts.Tables[0].ToString();
+            dataGridView1.DataSource = dts.Tables[0];
+            //dataGridView1.DataSource = dts;
+            //dataGridView1.DataMember = "UserTypes";
+
 
         }
     }
