@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace ConnectionClass
 {
-    public class Class1 { 
+    public class ClassDB { 
 
 
         private string _ConnectionString;
@@ -17,7 +17,7 @@ namespace ConnectionClass
 
     public void getConnexionString()
     {
-        _ConnectionString = ConfigurationManager.ConnectionStrings["prueba.Properties.Settings.BadgesConnectionString"].ConnectionString;
+        _ConnectionString = ConfigurationManager.ConnectionStrings["prueba.BadgesConnectionString"].ConnectionString;
 
     }
 

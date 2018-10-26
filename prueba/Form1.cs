@@ -19,7 +19,7 @@ namespace prueba
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ConnectionClass.Class1 class1 = new ConnectionClass.Class1();
+            ConnectionClass.ClassDB class1 = new ConnectionClass.ClassDB();
 
             DataSet dts;
             dts = class1.portaTaula("UserTypes");
