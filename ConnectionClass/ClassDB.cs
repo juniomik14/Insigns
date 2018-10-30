@@ -17,7 +17,7 @@ namespace ConnectionClass
 
     public void getConnexionString()
     {
-        _ConnectionString = ConfigurationManager.ConnectionStrings["prueba.BadgesConnectionString"].ConnectionString;
+        _ConnectionString = ConfigurationManager.ConnectionStrings["pruebaBadgesConnectionString"].ConnectionString;
 
     }
 
