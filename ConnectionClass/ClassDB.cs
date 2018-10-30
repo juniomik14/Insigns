@@ -17,7 +17,7 @@ namespace ConnectionClass
 
     public void getConnexionString()
     {
-        _ConnectionString = ConfigurationManager.ConnectionStrings["pruebaBadgesConnectionString"].ConnectionString;
+        _ConnectionString = ConfigurationManager.ConnectionStrings["BadgesConnectionString"].ConnectionString;
 
     }
 
@@ -55,8 +55,31 @@ namespace ConnectionClass
             connexxion.Close();
 
         }
+
+
     }
-    public void Actualitzar(DataSet dts, string consulta)
+
+        private void portaDadesOLEDB(string nomTaula) {
+            connectBD();
+            string query = "SELECT * FROM " + nomTaula;
+            OleDbDataAdapter adapter = new OleDbDataAdapter(query, _ConnectionString);
+            DataSet dtsCli = new DataSet();
+
+        }
+        //private void bindingDades() {
+
+        //    foreach (txt in )
+        //    {
+        //        if (z is TextBox)
+        //        {
+        //            ((TextBox)z).Text = ((TextBox)z).Name;
+        //        }
+
+
+        //    }
+
+        //}
+        public void Actualitzar(DataSet dts, string consulta)
     {
         try
         {
