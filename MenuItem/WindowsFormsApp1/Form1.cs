@@ -45,8 +45,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            
+ 
+                menuStrip1.Items.Clear();
+
                 ConnectionClass.Class1 db;
 
                 db = new ConnectionClass.Class1();
@@ -64,7 +65,8 @@ namespace WindowsFormsApp1
                     fruitToolStripMenuItem.Text = dr["textmenu"].ToString();
                     fruitToolStripMenuItem.Classe = dr["DLL"].ToString();
                     fruitToolStripMenuItem.Form = dr["Form"].ToString();
-                    //fruitToolStripMenuItem.Click += new System.EventHandler();
+                
+                
                     menuStrip1.Items.Add(fruitToolStripMenuItem);
                     
                 }

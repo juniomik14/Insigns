@@ -48,9 +48,11 @@ namespace bcMenuItem
         }
         #endregion
 
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-            menuStrip1.Items.Add("hola");
-        }
+        //private void UserControl1_Load(object sender, EventArgs e)
+        //{
+        //    menuStrip1.Items.Add("hola1");
+        //    menuStrip1.Items.Add("hola2");
+        //    menuStrip1.Items.Add("hola3");
+        //}
     }
 }
