@@ -45,8 +45,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            
+ 
+                menuStrip1.Items.Clear();
+
                 ConnectionClass.Class1 db;
 
                 db = new ConnectionClass.Class1();
