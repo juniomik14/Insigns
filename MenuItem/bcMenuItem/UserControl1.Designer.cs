@@ -46,7 +46,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(595, 25);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
+            //this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -55,6 +56,15 @@ namespace bcMenuItem
         public void ObreForm(object sender, EventArgs e)
         {
             MessageBox.Show("Hola");
+
+            //aki va el obrir form
+
+            Assembly ensamblat = Assembly.LoadFrom(_Classe);
+            Object dllBD;
+            Type tipus;
+            tipus = ensamblat.GetType(_Form);
+            dllBD = Activator.CreateInstance(tipus);
+            ((Form)dllBD).Show();
         }
 
 
