@@ -62,7 +62,7 @@ namespace bcMenuItem
             Assembly ensamblat = Assembly.LoadFrom(_Classe+".dll");
             Object dllBD;
             Type tipus;
-            tipus = ensamblat.GetType(_Form);
+            tipus = ensamblat.GetType(_Classe+"."+_Form);
             dllBD = Activator.CreateInstance(tipus);
             ((Form)dllBD).Show();
         }
