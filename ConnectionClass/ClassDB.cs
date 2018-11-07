@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Configuration;
+using System.Reflection;
 
 namespace ConnectionClass
 {
@@ -66,19 +67,18 @@ namespace ConnectionClass
             DataSet dtsCli = new DataSet();
 
         }
-        //private void bindingDades() {
+        private void bindingDades()
+        {
+            Assembly assembly = Assembly.LoadFrom(@"prueba.dll");
+            Object dllBD;
+            Type tipus;
+            tipus = assembly.GetType("prueba.form1");
+            dllBD = Activator.CreateInstance(tipus);
 
-        //    foreach (txt in )
-        //    {
-        //        if (z is TextBox)
-        //        {
-        //            ((TextBox)z).Text = ((TextBox)z).Name;
-        //        }
-
-
-        //    }
-
-        //}
+            DataSet dts;
+          
+  
+        }
         public void Actualitzar(DataSet dts, string consulta)
     {
         try

@@ -19,12 +19,12 @@ namespace prueba
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ConnectionClass.ClassDB class1 = new ConnectionClass.ClassDB();
+         //  ConnectionClass.ClassDB class1 = new ConnectionClass.ClassDB();
 
-            DataSet dts;
-            dts = class1.portaTaula("UserTypes");
+            //DataSet dts;
+            //dts = class1.portaTaula("UserTypes");
 
-            dataGridView1.DataSource = dts.Tables[0];
+            //dataGridView1.DataSource = dts.Tables[0];
             //dataGridView1.DataSource = dts;
             //dataGridView1.DataMember = "UserTypes";
 
