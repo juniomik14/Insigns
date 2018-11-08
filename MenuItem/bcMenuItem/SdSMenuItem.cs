@@ -59,10 +59,10 @@ namespace bcMenuItem
 
             //aki va el obrir form
 
-            Assembly ensamblat = Assembly.LoadFrom(_Classe+".dll");
+            Assembly ensamblat = Assembly.LoadFrom(_Classe);
             Object dllBD;
             Type tipus;
-            tipus = ensamblat.GetType(_Classe+"."+_Form);
+            tipus = ensamblat.GetType(_Form);
             dllBD = Activator.CreateInstance(tipus);
             ((Form)dllBD).Show();
         }
