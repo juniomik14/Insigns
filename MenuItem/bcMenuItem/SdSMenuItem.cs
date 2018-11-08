@@ -57,8 +57,8 @@ namespace bcMenuItem
 
         public void ObreForm(object sender, EventArgs e)
         {
-            if (!EsPare)
-            {
+           // if (!EsPare)
+           // {
                // try
                // {
 
@@ -73,7 +73,7 @@ namespace bcMenuItem
                // {
                  //   MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
                // }
-            }
+           // }
             
         }
 
