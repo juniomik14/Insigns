@@ -48,6 +48,7 @@ namespace bcMenuItem
             }
         }
         #endregion
+        public bool EsPare { get; set; }
 
         private void InitializeComponent()
         {
@@ -56,19 +57,22 @@ namespace bcMenuItem
 
         public void ObreForm(object sender, EventArgs e)
         {
-            try
+            if (!EsPare)
             {
+               // try
+               // {
 
-                Assembly ensamblat = Assembly.LoadFrom(_Classe);
-                Object dllBD;
-                Type tipus;
-                tipus = ensamblat.GetType(_Form);
-                dllBD = Activator.CreateInstance(tipus);
-                ((Form)dllBD).Show();
-            }
-            catch
-            {
-                MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
+                    Assembly ensamblat = Assembly.LoadFrom(_Classe);
+                    Object dllBD;
+                    Type tipus;
+                    tipus = ensamblat.GetType(_Form);
+                    dllBD = Activator.CreateInstance(tipus);
+                    ((Form)dllBD).Show();
+               // }
+               // catch
+               // {
+                 //   MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
+               // }
             }
             
         }

@@ -48,6 +48,7 @@ namespace WindowsFormsApp1
                 fruitToolStripMenuItem.Classe = dr["DLL"].ToString();
                 fruitToolStripMenuItem.Form = dr["Form"].ToString();
                 _esPare = (bool)dr["Pare"];
+                fruitToolStripMenuItem.EsPare = _esPare;
 
                 if (_esPare)
                 {
