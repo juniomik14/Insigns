@@ -7,69 +7,68 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using bcMenuItem;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        int cont = 0;
+
+        bool _esPare;
+        string _idPare;
+        string _idMenu;
+        DataSet dts;
+        SdSMenuItem fruitToolStripMenuItem;
+
         public Form1()
         {
             InitializeComponent();
-        }
-        private string _dll;
-
-        public string dll
-        {
-            get { return _dll; }
-            set { _dll = value; }
-        }
-
-
-        private string _hola;
-
-        public string hola
-        {
-            get { return _hola; }
-            set { _hola = value; }
-        }
-
-        private string _culdolla;
-
-        public string culdolla
-        {
-            get { return _culdolla; }
-            set { _culdolla = value; }
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
- 
-                menuStrip1.Items.Clear();
 
-                ConnectionClass.ClassDB db;
+            menuStrip1.Items.Clear();
+            ConnectionClass.ClassDB db;
 
-                db = new ConnectionClass.ClassDB();
+            db = new ConnectionClass.ClassDB();
 
-                DataSet dts;
 
-                dts = db.portaTaula("Menu");
 
-                dataGridView1.DataSource = dts.Tables[0];
+            dts = db.portaTaula("Menu");
 
-                foreach (DataRow dr in dts.Tables[0].Rows)
+            dataGridView1.DataSource = dts.Tables[0];
+
+            foreach (DataRow dr in dts.Tables[0].Rows)
+            {
+                 fruitToolStripMenuItem = new SdSMenuItem();
+
+                fruitToolStripMenuItem.Text = dr["textmenu"].ToString();
+                fruitToolStripMenuItem.Classe = dr["DLL"].ToString();
+                fruitToolStripMenuItem.Form = dr["Form"].ToString();
+                _esPare = (bool)dr["Pare"];
+
+                if (_esPare)
                 {
-                    var fruitToolStripMenuItem = new bcMenuItem.SdSMenuItem();
-
-                    fruitToolStripMenuItem.Text = dr["textmenu"].ToString();
-                    fruitToolStripMenuItem.Classe = dr["DLL"].ToString();
-                    fruitToolStripMenuItem.Form = dr["Form"].ToString();
-                
-                
+                    _idMenu = dr["idMenu"].ToString();
                     menuStrip1.Items.Add(fruitToolStripMenuItem);
-                    
+                    AddFills(_idMenu);
                 }
+            }
+        }
+
+        private void AddFills(string idMenu)
+        {
+            foreach (DataRow dr in dts.Tables[0].Rows)
+            {
+                string fill = dr["textmenu"].ToString();
+                _idPare = dr["idpare"].ToString();
+                if (_idPare == _idMenu)
+                {
+                    fruitToolStripMenuItem.DropDownItems.Add(fill);
+                }
+            }
         }
 
     }
