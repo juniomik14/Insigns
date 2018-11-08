@@ -48,9 +48,9 @@ namespace WindowsFormsApp1
  
                 menuStrip1.Items.Clear();
 
-                ConnectionClass.Class1 db;
+                ConnectionClass.ClassDB db;
 
-                db = new ConnectionClass.Class1();
+                db = new ConnectionClass.ClassDB();
 
                 DataSet dts;
 
@@ -70,7 +70,6 @@ namespace WindowsFormsApp1
                     menuStrip1.Items.Add(fruitToolStripMenuItem);
                     
                 }
-
         }
 
     }
