@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -55,16 +56,21 @@ namespace bcMenuItem
 
         public void ObreForm(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola");
+            try
+            {
 
-            //aki va el obrir form
-
-            Assembly ensamblat = Assembly.LoadFrom(_Classe);
-            Object dllBD;
-            Type tipus;
-            tipus = ensamblat.GetType(_Form);
-            dllBD = Activator.CreateInstance(tipus);
-            ((Form)dllBD).Show();
+                Assembly ensamblat = Assembly.LoadFrom(_Classe);
+                Object dllBD;
+                Type tipus;
+                tipus = ensamblat.GetType(_Form);
+                dllBD = Activator.CreateInstance(tipus);
+                ((Form)dllBD).Show();
+            }
+            catch
+            {
+                MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
+            }
+            
         }
 
 
