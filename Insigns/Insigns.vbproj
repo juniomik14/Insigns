@@ -172,5 +172,11 @@
   <ItemGroup>
     <None Include="Resources\google_abstract_by_dynamicz34-d718hzj.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MenuItem\bcMenuItem\bcMenuItem.csproj">
+      <Project>{f2b5f753-b696-40fd-ade0-3e22e0fb850f}</Project>
+      <Name>bcMenuItem</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
