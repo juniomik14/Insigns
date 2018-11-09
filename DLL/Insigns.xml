@@ -1,0 +1,416 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Insigns
+</name>
+</assembly>
+<members>
+<member name="T:Insigns.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Insigns.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Insigns.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Insigns.My.Resources.Resources.google_abstract_by_dynamicz34_d718hzj">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.AssignmentConditionsScoreDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.AssignmentTypesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeAssignmentsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeKitDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeKitsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeTypesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClanMembersDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClansDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClanScoreDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.KitTypesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.LevelTypesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.MenuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ScoreTypesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UsersDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UserScoreDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UserTypesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.AssignmentConditionsScoreRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.AssignmentTypesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeAssignmentsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeKitDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeKitsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeTypesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClanMembersRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClansRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClanScoreRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.KitTypesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.LevelTypesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.MenuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ScoreTypesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UsersRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UserScoreRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UserTypesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.AssignmentConditionsScoreRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.AssignmentTypesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeAssignmentsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeKitDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeKitsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.BadgeTypesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClanMembersRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClansRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ClanScoreRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.KitTypesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.LevelTypesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.MenuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.ScoreTypesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UsersRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UserScoreRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSet.UserTypesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.AssignmentConditionsScoreTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.AssignmentTypesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.BadgeAssignmentsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.BadgeKitDetailTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.BadgeKitsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.BadgesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.BadgeTypesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.ClanMembersTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.ClansTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.ClanScoreTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.KitTypesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.LevelTypesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.MenuTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.ScoreTypesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.UsersTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.UserScoreTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.UserTypesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Insigns.BadgesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Insigns.BadgesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Insigns.BadgesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Insigns.BadgesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Insigns.BadgesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Insigns.BadgesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Insigns.BadgesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Insigns.BadgesDataSetTableAdapters.TableAdapterManager.UpdateAll(Insigns.BadgesDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Insigns.BadgesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
