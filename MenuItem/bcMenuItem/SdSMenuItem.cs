@@ -62,9 +62,12 @@ namespace bcMenuItem
 
         public void ObreForm(object sender, EventArgs e)
         {
-            // if (!EsPare)
-            // {
+
             MessageBox.Show("intentant obriri form");
+
+            if (!EsPare)
+            {
+
                 try
                 {
 
@@ -74,13 +77,12 @@ namespace bcMenuItem
                     tipus = ensamblat.GetType(_Form);
                     dllBD = Activator.CreateInstance(tipus);
                     ((Form)dllBD).Show();
-               }
-               catch
+                }
+                catch
                 {
-                   MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
-               }
-           // }
-            
+                    MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
+                }
+            }
         }
 
 
