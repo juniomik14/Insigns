@@ -17,6 +17,7 @@ namespace MantenimientoTest
 
         DataSet dts;
         SdsTextBox tb;
+        ClassDB db;
 
         public Form1()
         {
@@ -27,7 +28,7 @@ namespace MantenimientoTest
 
         private void InicializarCosas()
         {
-            ClassDB db = new ClassDB();
+            db = new ClassDB();
             tb = new SdsTextBox();
 
 
@@ -48,24 +49,34 @@ namespace MantenimientoTest
 
         private void BindDades()
         {
+            string[] columNames = new string[dts.Tables[0].Columns.Count];
+            int i = 0;
+            foreach (DataColumn column in dts.Tables[0].Columns)
+            {
+                columNames[i] = column.ColumnName;
+                i++;
+            }
+
+            i = 3;
             foreach (Control c in this.Controls)
             {
                 if (c is SdsTextBox)
                 {
-                    c.DataBindings.Clear();
-                   
-                    c.DataBindings.Add("Text", dts.Tables[0], "DescType");
-                    c.DataBindings.Add("Text", dts.Tables[0], "DescType");
-                    c.DataBindings.Add("Text", dts.Tables[0], "DescType");
-                    tb.Validated += new EventHandler(vali);
+                    ((SdsTextBox)c).DataBindings.Clear();
+                    ((SdsTextBox)c).DataBindings.Add("Text", dts.Tables[0], columNames[i]);
+                    ((SdsTextBox)c).Validated += new EventHandler(validar);
+                    i--;
                 }
                 dataGridView1.DataSource = dts.Tables[0];
             }
         }
-
-        private void vali(object sender, EventArgs e)
+        private void validar(object sender, EventArgs e)
         {
-            DataBindings[0].BindingManagerBase.EndCurrentEdit();
+            ((TextBox)sender).DataBindings[0].BindingManagerBase.EndCurrentEdit();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            db.Actualitzar(dts, "select * from UserTypes");
         }
     }
 }
