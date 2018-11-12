@@ -7,9 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionClass", "Connecti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bcMenuItem", "MenuItem\bcMenuItem\bcMenuItem.csproj", "{F2B5F753-B696-40FD-ADE0-3E22E0FB850F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "MenuItem\WindowsFormsApp1\WindowsFormsApp1.csproj", "{91076E00-DA8C-40E8-911B-87CE98911236}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prova", "MenuItem\prova\prova.csproj", "{305F0B34-1975-451A-955B-EEDFB61071BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Llensador", "MenuItem\WindowsFormsApp1\Llensador.csproj", "{91076E00-DA8C-40E8-911B-87CE98911236}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SdSUsuaris", "MenuItem\SdSUsuaris\SdSUsuaris.csproj", "{CE99E45F-14E6-4822-85A2-B69A5B327F67}"
 EndProject
@@ -41,10 +39,6 @@ Global
 		{91076E00-DA8C-40E8-911B-87CE98911236}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91076E00-DA8C-40E8-911B-87CE98911236}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91076E00-DA8C-40E8-911B-87CE98911236}.Release|Any CPU.Build.0 = Release|Any CPU
-		{305F0B34-1975-451A-955B-EEDFB61071BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{305F0B34-1975-451A-955B-EEDFB61071BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{305F0B34-1975-451A-955B-EEDFB61071BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{305F0B34-1975-451A-955B-EEDFB61071BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE99E45F-14E6-4822-85A2-B69A5B327F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE99E45F-14E6-4822-85A2-B69A5B327F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE99E45F-14E6-4822-85A2-B69A5B327F67}.Release|Any CPU.ActiveCfg = Release|Any CPU

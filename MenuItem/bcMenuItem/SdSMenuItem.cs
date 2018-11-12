@@ -74,7 +74,6 @@ namespace bcMenuItem
                     MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
                 }
             }
-
         }
 
 
