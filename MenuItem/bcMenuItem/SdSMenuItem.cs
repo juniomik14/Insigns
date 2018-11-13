@@ -18,7 +18,6 @@ namespace bcMenuItem
             InitializeComponent();
         }
 
-
         #region Classe
         private string _Classe;
         public string Classe
@@ -52,18 +51,13 @@ namespace bcMenuItem
 
         private void InitializeComponent()
         {
-            
-            
                 this.Click += new System.EventHandler(this.ObreForm);
-            
-            
         }
 
         public void ObreForm(object sender, EventArgs e)
         {
            if (!EsPare)
            {
-
                 try
                 {
 
