@@ -46,7 +46,8 @@ namespace ConnectionClass
         {
             connectBD();
             OleDbCommand comanda = new OleDbCommand(consulta, connexxion);
-        }
+            OleDbCommandBuilder builder = new OleDbCommandBuilder(adapterDts);
+            }
         catch (OleDbException e)
         {
         }
