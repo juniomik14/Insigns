@@ -98,7 +98,7 @@
             // 
             this.sdsTextBox3.Location = new System.Drawing.Point(56, 243);
             this.sdsTextBox3.Name = "sdsTextBox3";
-            this.sdsTextBox3.Nom = null;
+            this.sdsTextBox3.Nom = "LevelAcces";
             this.sdsTextBox3.Size = new System.Drawing.Size(100, 20);
             this.sdsTextBox3.TabIndex = 3;
             // 
@@ -106,7 +106,7 @@
             // 
             this.sdsTextBox2.Location = new System.Drawing.Point(56, 192);
             this.sdsTextBox2.Name = "sdsTextBox2";
-            this.sdsTextBox2.Nom = null;
+            this.sdsTextBox2.Nom = "DescType";
             this.sdsTextBox2.Size = new System.Drawing.Size(100, 20);
             this.sdsTextBox2.TabIndex = 2;
             // 
@@ -114,7 +114,7 @@
             // 
             this.sdsTextBox1.Location = new System.Drawing.Point(56, 143);
             this.sdsTextBox1.Name = "sdsTextBox1";
-            this.sdsTextBox1.Nom = null;
+            this.sdsTextBox1.Nom = "CodeType";
             this.sdsTextBox1.Size = new System.Drawing.Size(100, 20);
             this.sdsTextBox1.TabIndex = 1;
             this.sdsTextBox1.Tag = "CodeType";
