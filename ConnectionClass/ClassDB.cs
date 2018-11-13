@@ -101,8 +101,7 @@ namespace ConnectionClass
     {
 
         connectBD();
-
-            OleDbDataAdapter adapter = new OleDbDataAdapter(consultaSql, _ConnectionString);
+        OleDbDataAdapter adapter = new OleDbDataAdapter(consultaSql, _ConnectionString);
         DataSet dtsCli = new DataSet();
         adapter.Fill(dtsCli, consultaSql);
 

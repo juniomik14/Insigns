@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -47,24 +48,41 @@ namespace bcMenuItem
             }
         }
         #endregion
+        public bool EsPare { get; set; }
 
         private void InitializeComponent()
         {
-            this.Click += new System.EventHandler(this.ObreForm);
+            MessageBox.Show(EsPare.ToString()+" "+Classe+" "+Form);
+            if (!EsPare)
+            {
+                this.Click += new System.EventHandler(this.ObreForm);
+            }
+            
         }
 
         public void ObreForm(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola");
 
-            //aki va el obrir form
+            MessageBox.Show("intentant obriri form");
 
-            Assembly ensamblat = Assembly.LoadFrom(_Classe);
-            Object dllBD;
-            Type tipus;
-            tipus = ensamblat.GetType(_Form);
-            dllBD = Activator.CreateInstance(tipus);
-            ((Form)dllBD).Show();
+            if (!EsPare)
+            {
+
+                try
+                {
+
+                    Assembly ensamblat = Assembly.LoadFrom(_Classe);
+                    Object dllBD;
+                    Type tipus;
+                    tipus = ensamblat.GetType(_Form);
+                    dllBD = Activator.CreateInstance(tipus);
+                    ((Form)dllBD).Show();
+                }
+                catch
+                {
+                    MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
+                }
+            }
         }
 
 
