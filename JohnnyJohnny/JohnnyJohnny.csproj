@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{91076E00-DA8C-40E8-911B-87CE98911236}</ProjectGuid>
+    <ProjectGuid>{421F152C-7D05-4C83-8941-144BEA9435AC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>JohnnyJohnny</RootNamespace>
+    <AssemblyName>JohnnyJohnny</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\DLL\</OutputPath>
+    <OutputPath>..\DLL\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -80,13 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ConnectionClass\ConnectionClass.csproj">
+    <ProjectReference Include="..\ConnectionClass\ConnectionClass.csproj">
       <Project>{65100624-fb27-4d9b-918d-1d6e493be37d}</Project>
       <Name>ConnectionClass</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\bcMenuItem\bcMenuItem.csproj">
-      <Project>{f2b5f753-b696-40fd-ade0-3e22e0fb850f}</Project>
-      <Name>bcMenuItem</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
