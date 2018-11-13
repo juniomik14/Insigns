@@ -49,23 +49,14 @@ namespace MantenimientoTest
 
         private void BindDades()
         {
-            string[] columNames = new string[dts.Tables[0].Columns.Count];
-            int i = 0;
-            foreach (DataColumn column in dts.Tables[0].Columns)
-            {
-                columNames[i] = column.ColumnName;
-                i++;
-            }
 
-            i = 3;
             foreach (Control c in this.Controls)
             {
                 if (c is SdsTextBox)
                 {
                     ((SdsTextBox)c).DataBindings.Clear();
-                    ((SdsTextBox)c).DataBindings.Add("Text", dts.Tables[0], columNames[i]);
+                    ((SdsTextBox)c).DataBindings.Add("Text", dts.Tables[0], ((SdsTextBox)c).Nom.ToString());
                     ((SdsTextBox)c).Validated += new EventHandler(validar);
-                    i--;
                 }
                 dataGridView1.DataSource = dts.Tables[0];
             }

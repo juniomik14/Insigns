@@ -52,13 +52,22 @@ namespace bcMenuItem
 
         private void InitializeComponent()
         {
-            this.Click += new System.EventHandler(this.ObreForm);
+            MessageBox.Show(EsPare.ToString()+" "+Classe+" "+Form);
+            if (!EsPare)
+            {
+                this.Click += new System.EventHandler(this.ObreForm);
+            }
+            
         }
 
         public void ObreForm(object sender, EventArgs e)
         {
+
+            MessageBox.Show("intentant obriri form");
+
             if (!EsPare)
             {
+
                 try
                 {
 

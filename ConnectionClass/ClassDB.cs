@@ -23,14 +23,13 @@ namespace ConnectionClass
         }
 
         public void connectBD()
-        {
+        { 
             getConnexionString();
             connexxion = new OleDbConnection(_ConnectionString);
             connexxion.Open();
         }
 
-        public DataSet portaTaula(string nomTaula)
-        {
+        public DataSet portaTaula(string nomTaula) {
 
             connectBD();
             string query = "SELECT * FROM " + nomTaula;
@@ -75,6 +74,7 @@ namespace ConnectionClass
             {
                 connectBD();
                 OleDbDataAdapter adapterDts = new OleDbDataAdapter(consulta, _ConnectionString);
+                OleDbCommandBuilder builder = new OleDbCommandBuilder(adapterDts);
                 adapterDts.Update(dts, consulta);
             }
             catch (OleDbException e)

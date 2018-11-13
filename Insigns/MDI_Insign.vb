@@ -52,17 +52,18 @@ Public Class MDI_Insign
             item = New bcMenuItem.SdSMenuItem()
 
             item.Text = dr("textmenu")
-            If dr("Pare") = False Then
+            If dr("Pare") = "False" Then
                 item.Classe = dr("DLL")
-
+                item.EsPare = False
                 item.Form = dr("Form")
             End If
 
-            item.EsPare = dr("Pare")
+
             'item.EsPare = _esPare;
 
-            If dr("Pare") = True Then
+            If dr("Pare") = "True" Then
                 idmenu = dr("idMenu")
+                item.EsPare = True
                 SdSMenuStrip.Items.Add(item)
                 AddFills(idmenu)
             End If
@@ -83,17 +84,17 @@ Public Class MDI_Insign
                 idPare = dr("idpare")
                 If idPare = idMenu Then
 
-                    item.DropDownItems.Add(fill)
-                End If
+                    Dim subitem = New bcMenuItem.SdSMenuItem()
+                    subitem.Classe = dr("DLL")
+                    subitem.Form = dr("Form")
+                    subitem.Text = dr("textmenu")
+                    subitem.EsPare = False
+                    item.DropDownItems.Add(subitem)
 
+                End If
             End If
 
-
         Next
-
-
-
-
 
     End Sub
 
