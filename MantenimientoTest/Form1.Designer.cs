@@ -1,6 +1,6 @@
 ﻿namespace MantenimientoTest
 {
-    partial class Form1
+    partial class frmMant_Table
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,114 +28,119 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.CodeTypeLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.sdsTextBox3 = new MantenimientoTest.SdsTextBox();
-            this.sdsTextBox2 = new MantenimientoTest.SdsTextBox();
-            this.sdsTextBox1 = new MantenimientoTest.SdsTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvMant_table = new System.Windows.Forms.DataGridView();
+            this.lblCodeType = new System.Windows.Forms.Label();
+            this.lblDescType = new System.Windows.Forms.Label();
+            this.lblLevelAcces = new System.Windows.Forms.Label();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.txtBoxLevelAcces = new MantenimientoTest.SdsTextBox();
+            this.txtBoxDescType = new MantenimientoTest.SdsTextBox();
+            this.txtBoxCodeType = new MantenimientoTest.SdsTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMant_table)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvMant_table
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(314, 160);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(406, 278);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvMant_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMant_table.Location = new System.Drawing.Point(314, 160);
+            this.dgvMant_table.Name = "dgvMant_table";
+            this.dgvMant_table.Size = new System.Drawing.Size(406, 278);
+            this.dgvMant_table.TabIndex = 0;
             // 
-            // CodeTypeLabel
+            // lblCodeType
             // 
-            this.CodeTypeLabel.AutoSize = true;
-            this.CodeTypeLabel.Location = new System.Drawing.Point(56, 124);
-            this.CodeTypeLabel.Name = "CodeTypeLabel";
-            this.CodeTypeLabel.Size = new System.Drawing.Size(56, 13);
-            this.CodeTypeLabel.TabIndex = 4;
-            this.CodeTypeLabel.Text = "CodeType";
+            this.lblCodeType.AutoSize = true;
+            this.lblCodeType.Location = new System.Drawing.Point(56, 124);
+            this.lblCodeType.Name = "lblCodeType";
+            this.lblCodeType.Size = new System.Drawing.Size(56, 13);
+            this.lblCodeType.TabIndex = 4;
+            this.lblCodeType.Text = "CodeType";
             // 
-            // label2
+            // lblDescType
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "DescType";
+            this.lblDescType.AutoSize = true;
+            this.lblDescType.Location = new System.Drawing.Point(56, 176);
+            this.lblDescType.Name = "lblDescType";
+            this.lblDescType.Size = new System.Drawing.Size(56, 13);
+            this.lblDescType.TabIndex = 5;
+            this.lblDescType.Text = "DescType";
             // 
-            // label3
+            // lblLevelAcces
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "LevelAcces";
+            this.lblLevelAcces.AutoSize = true;
+            this.lblLevelAcces.Location = new System.Drawing.Point(56, 227);
+            this.lblLevelAcces.Name = "lblLevelAcces";
+            this.lblLevelAcces.Size = new System.Drawing.Size(63, 13);
+            this.lblLevelAcces.TabIndex = 6;
+            this.lblLevelAcces.Text = "LevelAcces";
             // 
-            // button1
+            // btnInsert
             // 
-            this.button1.Location = new System.Drawing.Point(33, 378);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Añadir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInsert.Location = new System.Drawing.Point(33, 378);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 7;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.Location = new System.Drawing.Point(138, 378);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnUpdate.Location = new System.Drawing.Point(138, 378);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 8;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // sdsTextBox3
+            // txtBoxLevelAcces
             // 
-            this.sdsTextBox3.Location = new System.Drawing.Point(56, 243);
-            this.sdsTextBox3.Name = "sdsTextBox3";
-            this.sdsTextBox3.Nom = "LevelAcces";
-            this.sdsTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.sdsTextBox3.TabIndex = 3;
+            this.txtBoxLevelAcces.ColumnName = "LevelAcces";
+            this.txtBoxLevelAcces.Location = new System.Drawing.Point(56, 243);
+            this.txtBoxLevelAcces.Name = "txtBoxLevelAcces";
+            this.txtBoxLevelAcces.Nom = "";
+            this.txtBoxLevelAcces.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxLevelAcces.TabIndex = 3;
             // 
-            // sdsTextBox2
+            // txtBoxDescType
             // 
-            this.sdsTextBox2.Location = new System.Drawing.Point(56, 192);
-            this.sdsTextBox2.Name = "sdsTextBox2";
-            this.sdsTextBox2.Nom = "DescType";
-            this.sdsTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.sdsTextBox2.TabIndex = 2;
+            this.txtBoxDescType.ColumnName = "DescType";
+            this.txtBoxDescType.Location = new System.Drawing.Point(56, 192);
+            this.txtBoxDescType.Name = "txtBoxDescType";
+            this.txtBoxDescType.Nom = "";
+            this.txtBoxDescType.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxDescType.TabIndex = 2;
             // 
-            // sdsTextBox1
+            // txtBoxCodeType
             // 
-            this.sdsTextBox1.Location = new System.Drawing.Point(56, 143);
-            this.sdsTextBox1.Name = "sdsTextBox1";
-            this.sdsTextBox1.Nom = "CodeType";
-            this.sdsTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.sdsTextBox1.TabIndex = 1;
-            this.sdsTextBox1.Tag = "CodeType";
+            this.txtBoxCodeType.ColumnName = "CodeType";
+            this.txtBoxCodeType.Location = new System.Drawing.Point(56, 143);
+            this.txtBoxCodeType.Name = "txtBoxCodeType";
+            this.txtBoxCodeType.Nom = "";
+            this.txtBoxCodeType.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxCodeType.TabIndex = 1;
+            this.txtBoxCodeType.Tag = "CodeType";
             // 
-            // Form1
+            // frmMant_Table
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.CodeTypeLabel);
-            this.Controls.Add(this.sdsTextBox3);
-            this.Controls.Add(this.sdsTextBox2);
-            this.Controls.Add(this.sdsTextBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.lblLevelAcces);
+            this.Controls.Add(this.lblDescType);
+            this.Controls.Add(this.lblCodeType);
+            this.Controls.Add(this.txtBoxLevelAcces);
+            this.Controls.Add(this.txtBoxDescType);
+            this.Controls.Add(this.txtBoxCodeType);
+            this.Controls.Add(this.dgvMant_table);
+            this.Name = "frmMant_Table";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmMant_Table_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMant_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,15 +148,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private SdsTextBox sdsTextBox1;
-        private SdsTextBox sdsTextBox2;
-        private SdsTextBox sdsTextBox3;
-        private System.Windows.Forms.Label CodeTypeLabel;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dgvMant_table;
+        private SdsTextBox txtBoxCodeType;
+        private SdsTextBox txtBoxDescType;
+        private SdsTextBox txtBoxLevelAcces;
+        private System.Windows.Forms.Label lblCodeType;
+        private System.Windows.Forms.Label lblDescType;
+        private System.Windows.Forms.Label lblLevelAcces;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 
