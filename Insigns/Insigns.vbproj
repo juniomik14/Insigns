@@ -52,10 +52,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ConnectionClass.dll</HintPath>
     </Reference>
-    <Reference Include="InsignsBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\InsignsBase.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -166,6 +162,10 @@
     <None Include="Resources\google_abstract_by_dynamicz34-d718hzj.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\InsignsBase\InsignsBase.vbproj">
+      <Project>{aa311a9f-3e6d-47f7-bf70-a64256c5c27b}</Project>
+      <Name>InsignsBase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MenuItem\bcMenuItem\bcMenuItem.csproj">
       <Project>{f2b5f753-b696-40fd-ade0-3e22e0fb850f}</Project>
       <Name>bcMenuItem</Name>

@@ -18,7 +18,6 @@ namespace bcMenuItem
             InitializeComponent();
         }
 
-
         #region Classe
         private string _Classe;
         public string Classe
@@ -52,22 +51,13 @@ namespace bcMenuItem
 
         private void InitializeComponent()
         {
-            MessageBox.Show(EsPare.ToString()+" "+Classe+" "+Form);
-            if (!EsPare)
-            {
                 this.Click += new System.EventHandler(this.ObreForm);
-            }
-            
         }
 
         public void ObreForm(object sender, EventArgs e)
         {
-
-            MessageBox.Show("intentant obriri form");
-
-            if (!EsPare)
-            {
-
+           if (!EsPare)
+           {
                 try
                 {
 
@@ -82,9 +72,7 @@ namespace bcMenuItem
                 {
                     MessageBox.Show("Error en obrir el formulari. Comprova que estigui la llibreria o el executable que vols obrir");
                 }
-            }
+           }
         }
-
-
     }
 }
