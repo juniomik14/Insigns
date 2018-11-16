@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Configuration;
+using System.Windows.Forms;
 
 namespace ConnectionClass
 {
@@ -79,24 +80,27 @@ namespace ConnectionClass
         //    }
 
         //}
-        public void Actualitzar(DataSet dts, string consulta)
-    {
-        try
+        public void Actualitzar(DataSet dts, string taula)
         {
-            connectBD();
-                OleDbDataAdapter adapterDts = new OleDbDataAdapter(consulta, _ConnectionString);
-            adapterDts.Update(dts, consulta);
-        }
-        catch (OleDbException e)
-        {
+            try
+            {
+                connectBD();
+                OleDbDataAdapter adapterDts = new OleDbDataAdapter("select * from " + taula, _ConnectionString);
+                OleDbCommandBuilder builder = new OleDbCommandBuilder(adapterDts);
 
+                   // MessageBox.Show(adapterDts.InsertCommand.CommandText);
+                adapterDts.Update(dts,taula);
+            }
+            catch 
+            {
+                    MessageBox.Show("error al actualitzar :'(");
+            }
+            finally
+            {
+                connexxion.Close();
+            }
         }
-        finally
-        {
-            connexxion.Close();
 
-        }
-    }
     public DataSet portaPerConsulta(string consultaSql)
     {
 
